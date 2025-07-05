@@ -29,6 +29,11 @@ app.post('/contact', (req, res) => {
   }
 });
 
+// Test route to confirm Render deployment is working
+app.get('/test', (req, res) => {
+  res.send("✅ Render deployment is working!");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
