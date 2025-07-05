@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Dr. Serena Blake</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a2d5b2c5d1.js" crossorigin="anonymous"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#FFF2E0] text-[#5F4A89]">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-2xl font-bold text-[#5F4A89]">Dr. Serena Blake, PsyD</a>
+      <ul class="hidden md:flex space-x-8 font-semibold text-[#5F4A89]">
+        <li><a href="/" class="hover:text-[#5F4A89]">Home</a></li>
+        <li><a href="/about" class="text-[#5F4A89] font-bold ">About</a></li>
+        <li><a href="/services" class="text-[#5F4A89]">Services</a></li>
+        <li><a href="/FAQ" class="text-[#5F4A89]">FAQ</a></li>
+        <li><a href="/views/contact.ejs" class="text-[#5F4A89] underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-8 mb-20" id="contact">
+    <h2 class="text-3xl font-bold text-[#5F4A89] mb-8 text-center">
+     Contact Dr. Serena Blake
+    </h2>
+ <form class="space-y-6" id="contact-form" novalidate="">
+     <div>
+      <label class="block text-sm font-semibold text-[#5F4A89] mb-1" for="name">
+       Name
+       <span class="text-red-600">
+        *
+       </span>
+      </label>
+      <input aria-describedby="name-error" class="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#5F4A89] focus:border-[#5F4A89]" id="name" name="name" required="" type="text"/>
+      <p aria-live="polite" class="text-red-600 text-sm mt-1 hidden" id="name-error">
+       Please enter your name.
+      </p>
+     </div>
+     <div>
+      <label class="block text-sm font-semibold text-[#5F4A89] mb-1" for="phone">
+       Phone
+       <span class="text-red-600">
+        *
+       </span>
+      </label>
+      <input aria-describedby="phone-error" class="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#5F4A89] focus:border-[#5F4A89]" id="phone" name="phone" pattern="^\+?[\d\s().-]{7,}$" placeholder="+1 555 555 5555" required="" type="tel"/>
+      <p aria-live="polite" class="text-red-600 text-sm mt-1 hidden" id="phone-error">
+       Please enter a valid phone number.
+      </p>
+     </div>
+     <div>
+      <label class="block text-sm font-semibold text-[#5F4A89] mb-1" for="email">
+       Email
+       <span class="text-red-600">
+        *
+       </span>
+      </label>
+      <input aria-describedby="email-error" class="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#5F4A89] focus:border-[#5F4A89]" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+      <p aria-live="polite" class="text-red-600 text-sm mt-1 hidden" id="email-error">
+       Please enter a valid email address.
+      </p>
+     </div>
+     <div>
+      <label class="block text-sm font-semibold text-[#5F4A89] mb-1" for="reason">
+       What brings you here?
+       <span class="text-red-600">
+        *
+       </span>
+      </label>
+      <textarea aria-describedby="reason-error" class="w-full rounded-md border border-gray-300 px-4 py-2 resize-y focus:outline-none focus:ring-2 focus:ring-[#5F4A89] focus:border-[#5F4A89]" id="reason" name="reason" placeholder="Please describe briefly..." required="" rows="4"></textarea>
+      <p aria-live="polite" class="text-red-600 text-sm mt-1 hidden" id="reason-error">
+       Please provide a reason for contacting.
+      </p>
+     </div>
+     <div>
+      <label class="block text-sm font-semibold text-[#5F4A89] mb-1" for="preferredTime">
+       Preferred time to reach you
+       <span class="text-red-600">
+        *
+       </span>
+      </label>
+      <input aria-describedby="preferredTime-error" class="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#5F4A89] focus:border-[#5F4A89]" id="preferredTime" name="preferredTime" placeholder="e.g., Weekdays after 3 PM" required="" type="text"/>
+      <p aria-live="polite" class="text-red-600 text-sm mt-1 hidden" id="preferredTime-error">
+       Please specify your preferred time.
+      </p>
+     </div>
+     <div class="flex items-center space-x-2">
+      <input aria-describedby="agree-error" class="rounded border-gray-300 text-[#5F4A89] focus:ring-[#5F4A89]" id="agree" name="agree" required="" type="checkbox"/>
+      <label class="text-[#5F4A89] font-semibold" for="agree">
+       I agree to be contacted
+       <span class="text-red-600">
+        *
+       </span>
+      </label>
+     </div>
+     <p aria-live="polite" class="text-red-600 text-sm mt-1 hidden" id="agree-error">
+      You must agree to be contacted.
+     </p>
+     <button class="w-full bg-[#5F4A89] text-white font-semibold py-3 rounded-md shadow-md hover:bg-[#4E3B72] transition" type="submit">
+      Submit
+     </button>
+     <p class="text-green-600 font-semibold mt-4 hidden text-center" id="form-success" role="alert">
+      Thank you for contacting Dr. Serena Blake. She will reach out to you
+            soon.
+     </p>
+    </form>
+    <script src="/js/main.js"></script> 
+   </section>
+  </main>
+  <section class="bg-white py-12 border-t border-gray-200">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-2xl font-bold text-[#5F4A89] mb-4">Developer Info</h3>
+      <p class="text-[#5F4A89] text-md">
+        This website was designed and developed by <span class="font-semibold">Ketan Chokkara</span> as part of a web development internship assignment.
+      </p>
+      <p class="text-[#5F4A89] text-md mt-2">
+        Technologies used: <span class="font-medium">HTML, EJS, Tailwind CSS, JavaScript, Express.js</span>
+      </p>
+      <p class="text-[#5F4A89] text-md mt-2">
+        Contact: <a href="mailto:chokkaraketanrao@gmail.com" class="text-[#5F4A89] hover:underline">chokkaraketanrao@gmail.com</a>
+      </p>
+    </div>
+  </section>
+  <footer class="bg-[#5F4A89] text-white py-8">
+   <div class="max-w-7xl mx-auto px-6 text-center text-sm">
+    © 2024 Dr. Serena Blake, PsyD. All rights reserved.
+    <div class="mt-2 text-sm">
+     Site built as part of internship assignment.
+    </div>
+    
+   </div>
+</body>
+</html>

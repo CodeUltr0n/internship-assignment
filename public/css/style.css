@@ -1,0 +1,41 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 0px rgba(95, 74, 137, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(95, 74, 137, 0.9);
+  }
+}
+
+.glow-up {
+  animation: glowPulse 2s ease-in-out infinite;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.glow-up:hover {
+  transform: scale(1.08);
+  background-color: #5F4A89;
+  color: #C599B6;
+  box-shadow: 0 0 25px rgba(95, 74, 137, 0.9);
+}

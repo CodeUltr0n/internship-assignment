@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services | Dr. Serena Blake</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a2d5b2c5d1.js" crossorigin="anonymous"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+  </style>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-[#FFF2E0] text-[#5F4A89]">
+
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-2xl font-bold text-[#5F4A89]">Dr. Serena Blake, PsyD</a>
+      <ul class="hidden md:flex space-x-8 font-semibold text-[#5F4A89]">
+        <li><a href="/" class="hover:text-[#5F4A89]">Home</a></li>
+        <li><a href="/about" class="text-00">About</a></li>
+        <li><a href="/services" class="text-[#5F4A89] font-bold underline">Services</a></li>
+        <li><a href="/FAQ" class="text-00">FAQ</a></li>
+        <li><a href="/contact" class="hover:text-[#5F4A89]">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <br>
+  <!-- Services Section -->
+   <section class="mb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="services">
+    <h2 class="text-3xl font-bold text-[#5F4A89] mb-12 text-center">
+     Services &amp; Specialties
+    </h2>
+    <div class="grid gap-12 md:grid-cols-3">
+     <!-- Anxiety & Stress Management -->
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col transition-transform duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="100" x-data="{ open: false }">
+      <button @click="open = !open" class="text-left">
+        <img alt="Therapist and client in a calm therapy session focused on anxiety and stress management, with soft natural light and peaceful environment" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/5665f236-e08d-4ea6-7fe1-d13afd048c87.jpg" width="600"/>
+        <div class="p-6 flex flex-col flex-grow">
+         <h3 class="text-xl font-semibold text-[#5F4A89] mb-3">
+          Anxiety &amp; Stress Management
+         </h3>
+         <p class="text-[#5F4A89] flex-grow">
+          Learn effective techniques to manage anxiety and reduce stress
+                  through cognitive-behavioral therapy and mindfulness practices.
+                  Dr. Blake helps you develop coping strategies tailored to your
+                  unique needs. Let’s work through it together.
+         </p>
+        </div>
+      </button>
+      <div x-show="open" x-transition class="p-4 bg-[#EEE6FF] text-[#5F4A89]">
+        <h4 class="text-lg font-semibold text-[#5F4A89] mb-2">Session Fees</h4>
+        <p>$150 / individual session</p>
+        <p>$180 / couples session</p>
+      </div>
+     </article>
+     <!-- Relationship Counseling -->
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col transition-transform duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="100" x-data="{ open: false }">
+      <button @click="open = !open" class="text-left">
+        <img alt="Couple sitting together in a counseling session with therapist, discussing relationship issues in a warm, inviting office" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c415b8fd-aff8-4d88-5af2-f9a65939d1ef.jpg" width="600"/>
+        <div class="p-6 flex flex-col flex-grow">
+         <h3 class="text-xl font-semibold text-[#5F4A89] mb-3">
+          Relationship Counseling
+         </h3>
+         <p class="text-[#5F4A89] flex-grow">
+          Strengthen communication and resolve conflicts with your partner
+                  through compassionate, evidence-based counseling designed to
+                  rebuild trust and intimacy. Let’s work through it together.
+         </p>
+        </div>
+      </button>
+      <div x-show="open" x-transition class="p-4 bg-[#EEE6FF] text-[#5F4A89]">
+        <h4 class="text-lg font-semibold text-[#5F4A89] mb-2">Session Fees</h4>
+        <p>$220 / individual session</p>
+        <p>$270 / couples session</p>
+      </div>
+     </article>
+     <!-- Trauma Recovery -->
+     <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col transition-transform duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="100" x-data="{ open: false }">
+      <button @click="open = !open" class="text-left">
+        <img alt="Therapist providing trauma recovery therapy in a safe, supportive environment with calming decor and natural light" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/2dec1a65-fc1b-40c3-eaf9-331015506b26.jpg" width="600"/>
+        <div class="p-6 flex flex-col flex-grow">
+         <h3 class="text-xl font-semibold text-[#5F4A89] mb-3">
+          Trauma Recovery
+         </h3>
+         <p class="text-[#5F4A89] flex-grow">
+          Heal from past trauma with personalized therapy that combines
+                  mindfulness and cognitive-behavioral techniques to restore your
+                  sense of safety and well-being. Let’s work through it together.
+         </p>
+        </div>
+      </button>
+      <div x-show="open" x-transition class="p-4 bg-[#EEE6FF] text-[#5F4A89]">
+        <h4 class="text-lg font-semibold text-[#5F4A89] mb-2">Session Fees</h4>
+        <p>$250 / individual session</p>
+        <p>$300 / couples session</p>
+      </div>
+     </article>
+     <!-- Grief & Loss Counseling -->
+<article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col transition-transform duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="100" x-data="{ open: false }">
+  <button @click="open = !open" class="text-left">
+    <img alt="Client in grief counseling session with therapist offering support in a peaceful setting" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://images.unsplash.com/photo-1739251775751-e8e8e4d6691e?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="600"/>
+    <div class="p-6 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-[#5F4A89] mb-3">Grief & Loss Counseling</h3>
+      <p class="text-[#5F4A89] flex-grow">
+        Navigate the emotional journey of grief with supportive counseling tailored to honor your healing process and provide comfort through compassionate dialogue.
+      </p>
+    </div>
+  </button>
+  <div x-show="open" x-transition class="p-4 bg-[#EEE6FF] text-[#5F4A89]">
+    <h4 class="text-lg font-semibold text-[#5F4A89] mb-2">Session Fees</h4>
+    <p>$170 / individual session</p>
+    <p>$210 / family session</p>
+  </div>
+</article>
+
+<!-- Self-Esteem & Confidence Building -->
+<article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col transition-transform duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="100" x-data="{ open: false }">
+  <button @click="open = !open" class="text-left">
+    <img alt="Young adult in therapy session building self-esteem with therapist encouragement" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="600"/>
+    <div class="p-6 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-[#5F4A89] mb-3">Self-Esteem & Confidence Building</h3>
+      <p class="text-[#5F4A89] flex-grow">
+        Empower yourself by uncovering inner strengths, overcoming self-doubt, and nurturing a positive self-image through confidence-focused therapy sessions.
+      </p>
+    </div>
+  </button>
+  <div x-show="open" x-transition class="p-4 bg-[#EEE6FF] text-[#5F4A89]">
+    <h4 class="text-lg font-semibold text-[#5F4A89] mb-2">Session Fees</h4>
+    <p>$160 / session</p>
+  </div>
+</article>
+
+<!-- Work-Life Balance Coaching -->
+<article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col transition-transform duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="100" x-data="{ open: false }">
+  <button @click="open = !open" class="text-left">
+    <img alt="Professional in work-life balance coaching session with serene environment" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://images.unsplash.com/photo-1573496545669-abf57046fcd6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="600"/>
+    <div class="p-6 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-[#5F4A89] mb-3">Work-Life Balance Coaching</h3>
+      <p class="text-[#5F4A89] flex-grow">
+        Reclaim control and harmony in your life by learning strategies that help you effectively manage professional and personal responsibilities.
+      </p>
+    </div>
+  </button>
+  <div x-show="open" x-transition class="p-4 bg-[#EEE6FF] text-[#5F4A89]">
+    <h4 class="text-lg font-semibold text-[#5F4A89] mb-2">Session Fees</h4>
+    <p>$190 / session</p>
+  </div>
+</article>
+    </div>
+    <div class="mt-16 text-center">
+      <a href="/FAQ" class="inline-block bg-[#5F4A89] text-white text-lg font-semibold px-6 py-3 rounded-md shadow-md hover:bg-[#4E3B72] transition duration-300">
+        View Frequently Asked Questions
+      </a>
+    </div>
+   </section>
+</body>
+</html>
