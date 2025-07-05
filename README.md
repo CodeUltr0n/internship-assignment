@@ -45,7 +45,4 @@ GitHub: @CodeUltr0n
 
 ---
 
-Let me know if you’d like me to:
-- Add images or screenshots
-- Include instructions for form validation
-- Customize for a specific role or company name
+
