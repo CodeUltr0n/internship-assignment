@@ -3,31 +3,21 @@
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "express-ejs-layouts": "^2.5.1",
-<<<<<<< HEAD
-    "node": "^22.17.0",
-=======
->>>>>>> 01e2cd6 (Update: use process.env.PORT for Railway deployment)
     "router": "^2.2.0"
   },
   "name": "project-intern",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-<<<<<<< HEAD
-=======
     "start": "node app.js",
->>>>>>> 01e2cd6 (Update: use process.env.PORT for Railway deployment)
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-<<<<<<< HEAD
-=======
   "engines": {
     "node": ">=18"
   },
->>>>>>> 01e2cd6 (Update: use process.env.PORT for Railway deployment)
   "description": "",
   "devDependencies": {
     "tailwindcss": "^4.1.11"
